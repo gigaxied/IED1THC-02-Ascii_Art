@@ -54,8 +54,9 @@ try {
         Start-Sleep -Milliseconds 60
     }
 }
-finally {
-    [console]::CursorVisibl
+    finally {
+    [console]::CursorVisible = $true
+}
 ```
 Installa node
 
