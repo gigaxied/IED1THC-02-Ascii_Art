@@ -23,9 +23,9 @@ Clear-Host
 [console]::CursorVisible = $false
 
 $art = @(
-" (•‿•) "
-"<(   )>"
-" /   \"
+    " (•‿•) "
+    "<(   )>"
+    ' /   \'
 )
 
 $x = 0
