@@ -61,11 +61,13 @@ finally {
 Installa node
 
 ```
-brew install node```
+brew install node
+```
 
 Copia il codice nel terminale 
 
 ``` 
-node -e "setInterval(()=>process.stdout.write(Math.random()>0.5?'\\':'//'),1)"```
+node -e "setInterval(()=>process.stdout.write(Math.random()>0.5?'\\':'//'),1)"
+```
 
 
