@@ -51,6 +51,19 @@ pwsh
 Copia il codice nel terminale:
 
 ```powershell
+$frames = "|","/","-","\"
+
+while ($true) {
+    foreach ($f in $frames) {
+        Write-Host -NoNewline "`r$f"
+        Start-Sleep -Milliseconds 100
+    }
+}
+````
+
+Copia il codice nel terminale:
+
+```powershell
 Clear-Host
 [console]::CursorVisible = $false
 
