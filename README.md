@@ -1,108 +1,58 @@
-# One liners
+# MacOs
 
-Assicurati di avere Node installato. In Terminale:
+## Creazione dello script
+Crea un file chiamato "ascii.py" in una cartella.
 
-
+Copia e incolla:
 ```bash
-node --version
+import random
+
+try:
+    while True:
+        print("/" if random.random() < 0.5 else "\\", end="")
+except KeyboardInterrupt:
+    pass
 ```
+Salva.
 
-Se non è installato, esegui:
+## Esecuzione
+Tasto destro sulla cartella dove il file è salvato e seleziona l'ultima voce "Servizi", poi "Nuovo terminale nella cartella".
 
-```
-brew install node
-```
-
-Copia il codice nel terminale 
-
-``` 
-node -e "setInterval(()=>process.stdout.write(Math.random()>0.5?'\\':'/'),10)"
-```
-
-# ASCII ART
-
-## (MacOS) Installazione di Powershell
-Assicurati di avere Homebrew installato. In Terminale:
-
+Scrivi:
 ```bash
-brew --version
+python3 ascii.py
 ```
+Premi invio.
 
-Se non c’è, installalo con:
+## Interruzione
+Premi Control + C
 
+<br/>
+--- 
+<br/>
+
+# Windows
+
+## Creazione dello script
+Crea un file chiamato "ascii.ps1" in una cartella.
+
+Copia e incolla:
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Installa powershell:
-
-```bash
-brew install powershell
-```
-
-Avvia powershell:
-
-```powershell
-pwsh
-```
-
-## (MacOS + Windows) Esempio Ascii animato
-
-Copia il codice nel terminale:
-
-```powershell
-$frames = "|","/","-","\"
-
 while ($true) {
-    foreach ($f in $frames) {
-        Write-Host -NoNewline "`r$f"
-        Start-Sleep -Milliseconds 100
-    }
-}
-````
-
-Copia il codice nel terminale:
-
-```powershell
-Clear-Host
-[console]::CursorVisible = $false
-
-$art = @(
-" (•‿•) "
-"<(   )>"
-"  /   \"
-)
-
-$x = 0
-$y = 0
-$dx = 1
-$dy = 1
-
-$width  = [console]::WindowWidth
-$height = [console]::WindowHeight
-
-try {
-    while ($true) {
-        Clear-Host
-
-        for ($i = 0; $i -lt $art.Count; $i++) {
-            [console]::SetCursorPosition($x, $y + $i)
-            Write-Host $art[$i]
-        }
-
-        $x += $dx
-        $y += $dy
-
-        if ($x -le 0 -or $x -ge ($width - 10)) { $dx = -$dx }
-        if ($y -le 0 -or $y -ge ($height - 5)) { $dy = -$dy }
-
-        Start-Sleep -Milliseconds 60
-    }
-}
-finally {
-    [console]::CursorVisible = $true
+    $carattere = if ((Get-Random -Maximum 2) -eq 0) { "/" } else { "\" }
+    Write-Host $carattere -NoNewline
 }
 ```
+Salva.
 
+## Esecuzione
+Tasto destro sulla cartella dove il file è salvato e seleziona "Apri nel terminale".
 
+Scrivi:
+```bash
+.\ascii.py
+```
+Premi invio.
 
+## Interruzione
+Premi Control + C
