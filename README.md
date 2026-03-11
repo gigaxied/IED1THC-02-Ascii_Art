@@ -1,6 +1,6 @@
 # MacOs
 
-## Creazione dello script
+### Creazione dello script
 Crea un file chiamato `ascii.py` in una cartella.
 
 Copia e incolla:
@@ -15,7 +15,7 @@ except KeyboardInterrupt:
 ```
 Salva.
 
-## Esecuzione
+### Esecuzione
 Tasto destro sulla cartella dove il file è salvato e seleziona l'ultima voce "Servizi", poi "Nuovo terminale nella cartella".
 
 Scrivi:
@@ -24,14 +24,14 @@ python3 ascii.py
 ```
 Premi invio.
 
-## Interruzione
+### Interruzione
 Premi `Control + C`
 
 <br/><br/>
 
 # Windows
 
-## Creazione dello script
+### Creazione dello script
 Crea un file chiamato `ascii.ps1` in una cartella.
 
 Copia e incolla:
@@ -43,7 +43,7 @@ while ($true) {
 ```
 Salva.
 
-## Esecuzione
+### Esecuzione
 Tasto destro sulla cartella dove il file è salvato e seleziona "Apri nel terminale".
 
 Scrivi:
@@ -52,6 +52,6 @@ Scrivi:
 ```
 Premi invio.
 
-## Interruzione
+### Interruzione
 Premi `Control + C`
 <br/><br/>
