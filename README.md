@@ -48,7 +48,7 @@ Tasto destro sulla cartella dove il file è salvato e seleziona "Apri nel termin
 
 Scrivi:
 ```bash
-.\ascii.py
+.\ascii.ps1
 ```
 Premi invio.
 
